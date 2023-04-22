@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone repository') {
             steps {
-//                 sh 'rm -rf spring-petclinic' // remove existing workspace
+                 sh 'rm -rf spring-petclinic' // remove existing workspace
 //                 sh 'git clone https://github.com/Aarushitiwari/spring-petclinic.git'
 //                 sh 'cd  spring-petclinic && git checkout main'
             }
