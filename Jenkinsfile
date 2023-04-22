@@ -15,9 +15,9 @@ pipeline {
         }
         stage('Ansible Deploy') {
             steps {
-                dir('spring-petclinic') {
+                // dir('spring-petclinic') {
                     sh 'ansible-playbook /etc/playbook.yml'
-                }
+                // }
             }
         }
     }
