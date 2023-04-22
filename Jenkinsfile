@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'cd spring-petclinic && ./mvnw package'
+                sh './mvnw package'
             }
         }
         stage('Ansible Deploy') {
